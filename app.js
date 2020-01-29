@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 8001;
+
 
 
 app.get('/', (req, res) => {
@@ -28,13 +28,10 @@ app.get('/', (req, res) => {
   res.send(`${numberToText}`);
 });
 
+module.exports = app;
 
 
 
 
 
 
-
-app.listen(PORT, () => {
-    console.log('Express server is listening on port 8001!');
-  });
